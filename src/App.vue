@@ -1,30 +1,28 @@
 <template>
-  <div id="app">
-   <p>Ola mundo</p>
-   <root></root>
+  <div class="container-fluid">
+  <Navbar></Navbar>
+  <FormRequest></FormRequest>
   </div>
-</template>
+</template> 
 
 <script>
-//import FormApp from './components/FormApp.vue'
-import root from './components/root.vue'
+
+import Navbar from "./components/navbar.vue";
+import FormRequest  from "./components/FormRequest.vue";
 
 export default {
   name: 'App',
   components:{
-    root
+    Navbar,
+    FormRequest,
+},mounted(){
+  
   }
+
  
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
